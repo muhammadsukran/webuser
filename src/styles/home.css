@@ -1,0 +1,104 @@
+.home-page {
+  background: #3f46c7;
+  color: white;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.home-hero h1 {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+.home-hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.home-schedule {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.schedule-card {
+  background: white;
+  color: black;
+  border-radius: 16px;
+  padding: 20px;
+  width: 420px;
+}
+
+.schedule-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.schedule-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-card th {
+  background: #1f2933;
+  color: white;
+  padding: 10px;
+}
+
+.schedule-card td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}

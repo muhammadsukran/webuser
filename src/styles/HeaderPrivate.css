@@ -1,0 +1,114 @@
+.header-private {
+  height: 80px;
+  background: linear-gradient(90deg, #1b1f6b, #20247f);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  color: #f4d03f;
+  position: relative;
+  z-index: 100;
+}
+
+/* LEFT */
+.header-private-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-private-logo {
+  width: 48px;
+}
+
+.header-private-text h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.header-private-text h2 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.header-private-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.nav-item.active {
+  background: #2e36ff;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+/* OVERLAY */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 90;
+}
+
+@media (max-width: 768px) {
+
+  .header-private-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .header-private-nav.open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background: #1b1f6b;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    z-index: 100;
+  }
+
+  .close-btn {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

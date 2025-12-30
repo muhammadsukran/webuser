@@ -1,0 +1,56 @@
+.splash {
+  width: 100%;
+  min-height: calc(100vh - 260px);
+  background-color: #3a3ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-content {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 40px 20px;
+  color: #d0a600;
+}
+
+.splash-logo {
+  width: clamp(140px, 30vw, 220px);
+  margin-bottom: 24px;
+}
+
+.welcome {
+  font-size: clamp(14px, 4vw, 18px);
+}
+
+.title {
+  font-size: clamp(20px, 6vw, 26px);
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.btn-masuk {
+  padding: 10x 40px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #ffd84d, #d0a600);
+  color: #1c1d56;
+  font-weight: 600;
+  font-size: clamp(14px, 4vw, 16px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-masuk:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .btn-masuk {
+    width: 100%;
+    max-width: 260px;
+  }
+}

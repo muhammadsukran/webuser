@@ -1,0 +1,97 @@
+.footer {
+  background: #1e236e;
+  color: #ffffff;
+  width: 100%;
+}
+
+/* ======================
+   MAIN LAYOUT
+====================== */
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  flex-wrap: wrap;
+}
+
+/* ======================
+   LEFT CONTENT
+====================== */
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-left div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ======================
+   RIGHT CIRCLE TEXT
+====================== */
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-text {
+  width: 180px;
+  height: 180px;
+}
+
+.circle-text svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text text {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.center-text {
+  fill: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ======================
+   FOOTER BOTTOM
+====================== */
+
+.footer-bottom {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  background: #15195c;
+}
+
+/* ======================
+   RESPONSIVE MOBILE
+====================== */
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-left div {
+    justify-content: center;
+  }
+
+  .circle-text {
+    width: 150px;
+    height: 150px;
+  }
+}
